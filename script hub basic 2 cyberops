@@ -19,6 +19,10 @@ local UICorner_5 = Instance.new("UICorner")
 local Byglr = Instance.new("TextLabel")
 local bang = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local scp096 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local invisible = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
@@ -33,9 +37,6 @@ aba.BorderColor3 = Color3.fromRGB(0, 0, 0)
 aba.BorderSizePixel = 0
 aba.Position = UDim2.new(0.270105064, 0, 0.275811136, 0)
 aba.Size = UDim2.new(0, 414, 0, 35)
-aba.Draggable =  true
-aba.Active = true
-aba.Selectable = true
 
 UICorner.Parent = aba
 
@@ -70,7 +71,7 @@ Minimizar.TextScaled = true
 Minimizar.TextSize = 14.000
 Minimizar.TextWrapped = true
 Minimizar.MouseButton1Down:Connect(function()
-	
+
 end)
 
 Fundohub.Name = "Fundo hub"
@@ -161,19 +162,36 @@ end)
 
 UICorner_6.Parent = bang
 
-SCP096.Name = "FESCP096"
-SCP096.Parent = Fundohub
-SCP096.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
-SCP096.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SCP096.BorderSizePixel = 0
-SCP096.Position = UDim2.new(0.489156634, 0, 0.276595742, 0)
-SCP096.Size = UDim2.new(0, 183, 0, 42)
-SCP096.Font = Enum.Font.SourceSans
-SCP096.Text = "FE SCP096"
-SCP096.TextColor3 = Color3.fromRGB(185, 25, 25)
-SCP096.TextSize = 14.000
-SCP096.MouseButton1Down:Connect(function()
-	loadstring(game:HttpGet('https://pastebin.com/raw/5G223UH5'))()
+scp096.Name = "scp096"
+scp096.Parent = Fundohub
+scp096.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+scp096.BorderColor3 = Color3.fromRGB(0, 0, 0)
+scp096.BorderSizePixel = 0
+scp096.Position = UDim2.new(0.0673250109, 0, 0.423505515, 0)
+scp096.Size = UDim2.new(0, 183, 0, 42)
+scp096.Font = Enum.Font.SourceSans
+scp096.Text = "FE Scp 096"
+scp096.TextColor3 = Color3.fromRGB(185, 25, 25)
+scp096.TextSize = 14.000
+scp096.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/glrt/fe-scp096/refs/heads/main/fescp096.lua'))()'))()
 end)
 
-UICorner_7.Parent = SCP096
+UICorner_7.Parent = scp096
+
+invisible.Name = "invisible"
+invisible.Parent = Fundohub
+invisible.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+invisible.BorderColor3 = Color3.fromRGB(0, 0, 0)
+invisible.BorderSizePixel = 0
+invisible.Position = UDim2.new(0.489011675, 0, 0.448328227, 0)
+invisible.Size = UDim2.new(0, 183, 0, 42)
+invisible.Font = Enum.Font.SourceSans
+invisible.Text = "invisible"
+invisible.TextColor3 = Color3.fromRGB(185, 25, 25)
+invisible.TextSize = 14.000
+invisible.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/glrt/invisible-fe/refs/heads/main/fe_invisible.lua'))()'))()'))()
+end)
+
+UICorner_8.Parent = invisible
